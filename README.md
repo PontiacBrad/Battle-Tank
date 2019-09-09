@@ -1,4 +1,4 @@
-Part of the Complete Unreal Creator course on Udemy, see [here](https://www.udemy.com/unrealcourse?couponCode=GitHubSpecial) for a special GitHubOffer.  The full course is part of [this](https://www.kickstarter.com/projects/bentristem/learn-to-make-video-games-unreal-devloper-course) Kiskstarter campaign which was over 1000% funded.  
+Part of the Complete Unreal Creator course on Udemy that I am currently taking.  The full course is part of [this](https://www.kickstarter.com/projects/bentristem/learn-to-make-video-games-unreal-devloper-course) Kiskstarter campaign which was over 1000% funded.  
 
 These are just the files from the course, not the actual tutorial videos.  This course is exclusievly on Udemy.com, and has many hours of high-quality videos.
 
