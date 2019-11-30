@@ -71,7 +71,10 @@ Saved/*
 
 # Compiled source files for the engine to use
 Intermediate/*
-Content/*
+Content/Collections/*
+Content/Developers/*
+Content/Environment_Set/*
+Content/StarterContent/*
 Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
