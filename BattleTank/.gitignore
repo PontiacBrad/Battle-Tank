@@ -76,6 +76,7 @@ Content/Developers/*
 Content/Environment_Set/*
 Content/StarterContent/*
 Plugins/*/Intermediate/*
+WindowsNoEditor/BattleTank/Content/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
