@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Tank.h"
 #include "GameFramework/PlayerController.h"
+#include "Engine/World.h"
 #include "TankPlayerController.generated.h" // Must be the last include
 
 /**
@@ -27,7 +28,8 @@ private:
 	UPROPERTY(EditAnywhere)
 	float CrossHairXLocation = 0.5;
 	UPROPERTY(EditAnywhere)
-	float CrossHairYLocation = 0.33333;
+	float CrossHairYLocation = 0.3;
 	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
+	bool GetLookVectorHitLocation(float LineTraceRange, FVector LookDirection, FVector& HitLocation) const;
 };
  
