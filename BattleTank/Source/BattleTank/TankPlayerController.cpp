@@ -2,6 +2,7 @@
 
 
 #include "TankPlayerController.h"
+#include "Tank.h"
 
 void ATankPlayerController::Tick(float DeltaTime) // Tick
 {
@@ -33,9 +34,10 @@ void ATankPlayerController::AimTowardsCrosshair()
 {
 	if (!GetControlledTank())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("No Controlled Tank"));
 		return;
 	}
+	//auto Time = GetWorld()->GetTimeSeconds();
+	//UE_LOG(LogTemp, Warning, TEXT("%f: AimTowardsCrosshair called"), Time);
 	FVector HitLocation; // Out Parameter
 
 	if (GetSightRayHitLocation(HitLocation))  // Has "side-effect", is going to line trace
