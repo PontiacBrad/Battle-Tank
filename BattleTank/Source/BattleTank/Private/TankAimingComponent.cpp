@@ -10,7 +10,7 @@ UTankAimingComponent::UTankAimingComponent()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;  //TODO Should this really tick?
+	PrimaryComponentTick.bCanEverTick = false;  //TODO Should this really tick?
 
 	// ...
 }
@@ -86,5 +86,5 @@ void UTankAimingComponent::MoveTurretTowards(FVector AimDirection)
 	auto TurretRotator = Turret->GetForwardVector().Rotation();
 	auto AimAsRotator = AimDirection.Rotation();
 	auto DeltaRotator = AimAsRotator - TurretRotator;
-	Turret->Rotate(DeltaRotator.Yaw); // TODO remove magic number
+	Turret->Rotate(DeltaRotator.GetNormalized().Yaw); // TODO remove magic number
 }
