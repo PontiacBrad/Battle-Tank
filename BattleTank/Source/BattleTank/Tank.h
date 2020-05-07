@@ -39,13 +39,13 @@ private:
 	//virtual void Tick(float DeltaTime) override;
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 1000; // TODO find sensible default Sensible starting value of 1000 m/s  
 	UPROPERTY(EditAnywhere, Category = Setup)
 	TSubclassOf<AProjectile> ProjectileBlueprint; // Alternative https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html
+	UPROPERTY(EditAnywhere, Category = Firing)
+	float LaunchSpeed = 4000; // TODO find sensible default Sensible starting value of 1000 m/s  
+	UPROPERTY(EditDefaultsOnly, Category = Firing)
+	float ReloadTimeInSeconds = 3;
 	// Local barrel reference for spawning projectile
 	UTankBarrel* Barrel = nullptr;
-	float ReloadTimeInSeconds = 3;
 	double LastFireTime = 0;
 };
